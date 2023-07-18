@@ -51,7 +51,7 @@ function handleButtonClick(e) {
   const playerChoice = e.target.textContent;
   const playerStateImg = document.querySelector(".img-zone img:nth-child(2)");
   playerStateImg.classList.add("player");
-  playerStateImg.src = ".imgs/paper.png";
+  playerStateImg.src = "imgs/paper.png";
   const random = Math.floor(Math.random() * 3) + 1;
   const computerChoice =
     random === 1
@@ -63,7 +63,7 @@ function handleButtonClick(e) {
       : "";
   const computerStateImg = document.querySelector(".img-zone img:first-child");
   computerStateImg.classList.add("computer");
-  computerStateImg.src = ".imgs/paper.png";
+  computerStateImg.src = "imgs/paper.png";
   computerStateImg.style.animationName = "computer-hand";
   playerStateImg.style.animationName = "player-hand";
   setTimeout(() => {

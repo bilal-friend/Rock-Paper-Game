@@ -27,10 +27,10 @@ function preparing() {
   imgZone.classList.add("img-zone");
   gameZone.appendChild(imgZone);
   const playerImg = document.createElement("img");
-  playerImg.src = "imgs/paper.png";
+  playerImg.src = "imgs/rock.png";
   imgZone.appendChild(playerImg);
   const computerImg = document.createElement("img");
-  computerImg.src = "imgs/paper.png";
+  computerImg.src = "imgs/rock.png";
   imgZone.appendChild(computerImg);
   const btnZone = document.createElement("div");
   btnZone.classList.add("btnZone");
@@ -51,7 +51,7 @@ function handleButtonClick(e) {
   const playerChoice = e.target.textContent;
   const playerStateImg = document.querySelector(".img-zone img:nth-child(2)");
   playerStateImg.classList.add("player");
-  playerStateImg.src = "imgs/paper.png";
+  playerStateImg.src = "imgs/rock.png";
   const random = Math.floor(Math.random() * 3) + 1;
   const computerChoice =
     random === 1
@@ -63,7 +63,7 @@ function handleButtonClick(e) {
       : "";
   const computerStateImg = document.querySelector(".img-zone img:first-child");
   computerStateImg.classList.add("computer");
-  computerStateImg.src = "imgs/paper.png";
+  computerStateImg.src = "imgs/rock.png";
   computerStateImg.style.animationName = "computer-hand";
   playerStateImg.style.animationName = "player-hand";
   setTimeout(() => {

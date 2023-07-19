@@ -19,6 +19,7 @@ startBtn.addEventListener("click", function () {
     preparing();
   }, 1100);
 });
+/// append Html content for start the game
 function preparing() {
   const guidText = document.createElement("h1");
   guidText.textContent = "Choose an option";
@@ -47,6 +48,7 @@ function preparing() {
     btn.addEventListener("click", handleButtonClick);
   });
 }
+///
 function handleButtonClick(e) {
   const playerChoice = e.target.textContent;
   const playerStateImg = document.querySelector(".img-zone img:nth-child(2)");
